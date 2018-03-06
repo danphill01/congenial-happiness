@@ -1,4 +1,6 @@
-# Bucket List API
+# congenial-happiness
+A Python/Flask project by The Midnight Jackals
+
 [![Build Status](https://travis-ci.org/jokamjohn/bucket_api.svg?branch=master)](https://travis-ci.org/jokamjohn/bucket_api)
 [![Coverage Status](https://coveralls.io/repos/github/jokamjohn/bucket_api/badge.svg)](https://coveralls.io/github/jokamjohn/bucket_api)
 [![BCH compliance](https://bettercodehub.com/edge/badge/jokamjohn/bucket_api?branch=master)](https://bettercodehub.com/)
@@ -61,3 +63,4 @@ You can also run tests with coverage by running this command in the terminal
 ```
 nosetests --with-coverage --cover-package=app
 ```
+=======
