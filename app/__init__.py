@@ -27,14 +27,6 @@ db = SQLAlchemy(app)
 from app import views
 
 # Register blue prints
-from app.auth.views import auth
-
-app.register_blueprint(auth, url_prefix='/v1')
-
-from app.bucket.views import bucket
-
-app.register_blueprint(conapp, url_prefix='/v1')
-
 from app.docs.views import docs
 
 app.register_blueprint(docs)
