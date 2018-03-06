@@ -30,7 +30,7 @@ flask run
 
 ## Live Application
 
-This API is hosted [here](https://warm-wildwood-40594.herokuapp.com/) on [heroku](heroku.com)
+This app is hosted [here](https://warm-wildwood-40594.herokuapp.com/) on [heroku](heroku.com)
 ## Generating dummy data
 You can also generate dummy data to test out the
 different API endpoints.
