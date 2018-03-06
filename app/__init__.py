@@ -33,11 +33,7 @@ app.register_blueprint(auth, url_prefix='/v1')
 
 from app.bucket.views import bucket
 
-app.register_blueprint(bucket, url_prefix='/v1')
-
-from app.bucketitems.views import bucketitems
-
-app.register_blueprint(bucketitems, url_prefix='/v1')
+app.register_blueprint(conapp, url_prefix='/v1')
 
 from app.docs.views import docs
 

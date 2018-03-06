@@ -1,6 +1,6 @@
 from flask import make_response, jsonify, url_for
 from app import app
-from app.models import Bucket
+from app.models import Conapp
 
 
 def response_for_user_bucket(user_bucket):
