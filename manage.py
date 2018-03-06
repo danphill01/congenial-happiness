@@ -1,7 +1,7 @@
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 from app import app, db, models
-from app.models import User, Bucket, BucketItem
+from app.models import User, Bucket
 import unittest
 import coverage
 import os
