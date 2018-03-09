@@ -1,10 +1,8 @@
 # congenial-happiness
 A Python/Flask project by The Midnight Jackals
 
-[![Build Status](https://travis-ci.org/jokamjohn/bucket_api.svg?branch=master)](https://travis-ci.org/jokamjohn/bucket_api)
-[![Coverage Status](https://coveralls.io/repos/github/jokamjohn/bucket_api/badge.svg)](https://coveralls.io/github/jokamjohn/bucket_api)
-[![BCH compliance](https://bettercodehub.com/edge/badge/jokamjohn/bucket_api?branch=master)](https://bettercodehub.com/)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cfda51ef2f8946639eb34b11fa8b5480)](https://www.codacy.com/app/jokamjohn/bucket_api?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jokamjohn/bucket_api&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.org/danphill01/congenial-happiness.svg?branch=master)](https://travis-ci.org/danphill01/congenial-happiness)
+[![Coverage Status](https://coveralls.io/repos/github/danphill01/congenial-happiness/badge.svg?branch=master)](https://coveralls.io/github/danphill01/congenial-happiness?
 
 ## Usage
 - [Running the application](#starting-the-application)
@@ -40,10 +38,10 @@ All you have to do is run this command
 python manage.py dummy
 ```
 
-A `user` with an email address of `example@bucketmail.com`
+A `user` with an email address of `user@email.com`
 and password `123456` is created. And also `100`
-Buckets and `1000` Bucket Items are created
-and items linked to the different Buckets.
+series and `1000` events are created
+and events linked to the different series.
 
 ## Running tests
 Before running the application tests, update your env variables

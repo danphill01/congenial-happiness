@@ -13,7 +13,7 @@ class User(db.Model):
     email = db.Column(db.String(255), unique=True, nullable=False)
     password = db.Column(db.String(255), nullable=False)
     registered_on = db.Column(db.DateTime, nullable=False)
-    buckets = db.relationship('Bucket', backref='bucket', lazy='dynamic')
+    conhaps = db.relationship('Conhap', backref='conhap', lazy='dynamic')
 
     def __init__(self, email, password):
         self.email = email

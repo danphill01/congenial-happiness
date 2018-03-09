@@ -2,7 +2,7 @@ import os
 
 base_dir = os.path.abspath(os.path.dirname(__file__))
 postgres_local_base = 'postgresql://postgres:123456@localhost/'
-database_name = 'api'
+database_name = 'conhap'
 
 
 class BaseConfig:

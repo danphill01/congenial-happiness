@@ -1,7 +1,7 @@
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 from app import app, db, models
-from app.models import User, Bucket
+from app.models import User, Conhap, ConhapItem
 import unittest
 import coverage
 import os
@@ -47,20 +47,20 @@ def test():
 @manager.command
 def dummy():
     # Create a user if they do not exist.
-    user = User.query.filter_by(email="example@bucketmail.com").first()
+    user = User.query.filter_by(email="user@email.com").first()
     if not user:
-        user = User("example@bucketmail.com", "123456")
+        user = User("user@email.com", "123456")
         user.save()
 
-    for i in range(100):
-        # Add buckets to the database
-        bucket = Bucket(faker.name.industry(), user.id)
-        bucket.save()
+    for _ in range(100):
+        # Add series to the database
+        series = Conapp(faker.name.industry(), user.id)
+        series.save()
 
-    for buck in range(1000):
-        # Add items to the bucket
-        buckt = Bucket.query.filter_by(id=randint(1, Bucket.query.count() - 1)).first()
-        item = BucketItem(faker.name.company_name(), faker.lorem_ipsum.word(), buckt.id)
+    for _ in range(1000):
+        # Add items to the series
+        series = Conhap.query.filter_by(id=randint(1, Conhap.query.count() - 1)).first()
+        item = ConhapItem(faker.name.company_name(), faker.lorem_ipsum.word(), series.id)
         db.session.add(item)
         try:
             db.session.commit()
