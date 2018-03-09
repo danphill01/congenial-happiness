@@ -24,7 +24,8 @@ COV = coverage.coverage(
     include='app/*',
     omit=[
         'app/auth/__init__.py',
-        'app/conhap/__init__.py'
+        'app/conhap/__init__.py',
+        'app/conhapitems/__init__.py'
     ]
 )
 COV.start()

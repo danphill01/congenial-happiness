@@ -2,7 +2,7 @@ from flask import Blueprint, request, abort
 from app.auth.helper import token_required
 from app.conhap.helper import response, response_for_created_conhap, response_for_user_conhap, response_with_pagination, \
     get_user_conhap_json_list, paginate_conhaps
-from app.models import User, conhap
+from app.models import User, Conhap
 
 # Initialize blueprint
 conhap = Blueprint('conhap', __name__)

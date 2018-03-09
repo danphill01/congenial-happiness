@@ -146,6 +146,7 @@ class Conapp(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     create_at = db.Column(db.DateTime, nullable=False)
     modified_at = db.Column(db.DateTime, nullable=False)
+    items = db.relationship('ConhapItem', backref='item', lazy='dynamic')
 
     def __init__(self, name, user_id):
         self.name = name
